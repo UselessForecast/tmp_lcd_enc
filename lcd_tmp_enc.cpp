@@ -12,13 +12,13 @@ int counter = 0;
 int aState;
 int aLastState;
 void setup(void) {
-    Serial.begin(9600);
-    pinMode(A,INPUT);
-    pinMode(B,INPUT);
-    aLastState = digitalRead(A);
-    sensors.begin();
-    lcd.begin();
-    lcd.backlight();
+  Serial.begin(9600);
+  pinMode(A,INPUT);
+  pinMode(B,INPUT);
+  aLastState = digitalRead(A);
+  sensors.begin();
+  lcd.begin();
+  lcd.backlight();
 
 }
 void loop(void) {
